@@ -1,4 +1,4 @@
-#include"class.h"
+#include"q1_181004.h"
 
 bankAccount :: bankAccount(string name,int id)
 {
@@ -80,5 +80,10 @@ void bankAccount :: deposit(int amount)
 		cout<<"unsuccessful"<<endl;
 	
 
+}
+
+bankAccount :: ~bankAccount()
+{
+	delete [] transactions;
 }
 
